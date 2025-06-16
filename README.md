@@ -1,23 +1,26 @@
-from openpyxl import Workbook
+# 📄 Excel Sheet Generator with Python
 
-# Kullanıcıdan sayfa isimlerini al (virgül ile ayırarak)
-sayfa_isimleri = input("Sayfa isimlerini girin (virgül ile ayırın): ")
-sheet_names = [name.strip() for name in sayfa_isimleri.split(",")]
+Bu Python projesi, `openpyxl` kütüphanesi ile kullanıcıdan alınan sayfa isimlerine göre dinamik olarak bir Excel dosyası oluşturur.
 
-# Yeni bir çalışma kitabı oluştur
-wb = Workbook()
+---
 
-# Varsayılan gelen ilk sayfayı sil
-default_sheet = wb.active
-wb.remove(default_sheet)
+## 🎯 Amaç
 
-# Sayfaları oluştur
-for name in sheet_names:
-    wb.create_sheet(title=name)
+- Üretim süreçlerinde veya veri giriş tablolarında, manuel olarak sayfa oluşturma ihtiyacını ortadan kaldırmak.
+- Kullanıcının belirlediği sayfa adlarıyla özelleştirilmiş Excel şablonları üretmek.
 
-# Kullanıcıdan dosya yolu al
-file_path = input("Excel dosyasının kaydedileceği tam yolu girin (örn: C:\\Users\\...\\dosya.xlsx): ")
+---
 
-# Kaydet
-wb.save(file_path)
-print(f'✅ Excel dosyası "{file_path}" başarıyla oluşturuldu.')
+## 🧰 Kullanılan Teknolojiler
+
+- Python 3.x  
+- openpyxl
+
+---
+
+## 🚀 Nasıl Çalıştırılır?
+
+### 1. Gerekli kütüphaneyi yükleyin:
+
+```bash
+pip install openpyxl
