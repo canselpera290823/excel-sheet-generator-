@@ -26,6 +26,9 @@ Bu Python projesi, `openpyxl` kütüphanesi ile kullanıcıdan alınan sayfa isi
 pip install openpyxl
 ```
 
+### 2. Python kodunu çalıştırın:
+
+```python
 from openpyxl import Workbook
 
 # Kullanıcıdan sayfa isimlerini al (virgül ile ayırarak)
@@ -49,4 +52,16 @@ file_path = input("Excel dosyasının kaydedileceği tam yolu girin (örn: C:\\U
 # Kaydet
 wb.save(file_path)
 print(f'✅ Excel dosyası "{file_path}" başarıyla oluşturuldu.')
+```
 
+---
+
+## 📄 Lisans
+
+Bu proje MIT lisansı ile lisanslanmıştır.
+
+---
+
+## 🤝 Katkıda Bulunmak
+
+Katkılarınızı memnuniyetle karşılıyoruz! Lütfen önce `issues` bölümünü kontrol edin, ardından bir pull request gönderin.
