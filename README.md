@@ -24,6 +24,7 @@ Bu Python projesi, `openpyxl` kütüphanesi ile kullanıcıdan alınan sayfa isi
 
 ```bash
 pip install openpyxl
+```
 
 from openpyxl import Workbook
 
